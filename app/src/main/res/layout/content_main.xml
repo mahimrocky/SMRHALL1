@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.msttech.smrhall.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:background="#e3e3e3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:background="#512DA8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/welcome_message"
+                android:textSize="40sp"
+                android:textColor="#FFF"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:background="#4527A0">
+
+            <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USERNAME"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="15sp"
+                android:textColor="#FFF"/>
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="textEmailAddress"
+                android:background="#FFF"
+                android:hint="Type your username"
+                />
+
+            <TextView
+                android:id="@+id/passwordTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="15sp"
+                android:hint="Enter your password"
+                android:textColor="#FFF"/>
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#FFF"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"/>
+            <Button
+                android:id="@+id/regButton"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="reg"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
